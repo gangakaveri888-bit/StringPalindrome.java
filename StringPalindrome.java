@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class StringPalindrome {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String str = sc.nextLine();
+        String reverse = "";
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reverse = reverse + str.charAt(i);
+        }
+        if (str.equalsIgnoreCase(reverse))
+            System.out.println("Palindrome String");
+        else
+            System.out.println("Not a Palindrome String");
+    }
+}
+OUTPUT:
+Enter a string: MADAM
+Palindrome String
